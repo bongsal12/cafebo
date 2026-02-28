@@ -13,7 +13,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-full md:w-64 md:min-h-screen border-r border-gray-500 bg-[#99613f]">
+    <aside className="w-full md:w-64 md:min-h-screen border-r border-gray-500 bg-[#042f2e]">
       <div className="p-5">
         <div className="rounded-2xl bg-black px-4 py-3 text-white">
           <div className="text-sm opacity-80">Cafe Admin</div>

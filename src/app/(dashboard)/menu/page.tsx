@@ -28,7 +28,7 @@ export default function MenuPage() {
 
   return (
     <div>
-      <div className="rounded-2xl bg-[#99613f] p-6 shadow-sm">
+      <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <h1 className="text-2xl font-bold text-gray-900">Menu Manager</h1>

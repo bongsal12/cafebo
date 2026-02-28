@@ -87,7 +87,7 @@ export function CategoriesPanel() {
   }
 
   return (
-    <div className="rounded-2xl bg-[#99613f] p-6 shadow-sm">
+    <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
       {toast && <Toast type={toast.type} message={toast.message} onClose={() => setToast(null)} />}
 
       <div className="flex items-center justify-between">
@@ -100,7 +100,7 @@ export function CategoriesPanel() {
 
       <div className="mt-5 overflow-hidden rounded-2xl border border-gray-100">
         <table className="w-full text-sm">
-          <thead className="bg-[#4f2206] text-gray-300 text-lg ">
+          <thead className="bg-[#042f2e] text-gray-300 text-lg ">
             <tr>
               <th className="px-4 py-3 text-left font-semibold">Name</th>
               <th className="px-4 py-3 text-left font-semibold">Slug</th>

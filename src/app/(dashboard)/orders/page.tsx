@@ -128,7 +128,7 @@ async function markStatus(orderId: number, status: "completed" | "cancelled") {
         </div>
       )}
 
-      <div className="rounded-2xl bg-[#99613f] p-6 shadow-sm">
+      <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
         <div className="flex items-start justify-between gap-3">
           <div>
             <h1 className="text-2xl font-bold text-white">Orders</h1>
@@ -151,7 +151,7 @@ async function markStatus(orderId: number, status: "completed" | "cancelled") {
         </div>
       </div>
 
-      <div className="rounded-2xl bg-[#99613f] p-6 shadow-sm">
+      <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
         {loading ? (
           <div className="text-sm text-gray-900">Loading...</div>
         ) : orders.length === 0 ? (

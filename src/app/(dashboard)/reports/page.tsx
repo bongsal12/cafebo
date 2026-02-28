@@ -170,8 +170,8 @@ const donutOptions = {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-2xl bg-[#99613f] p-6 shadow-sm">
-        <h1 className="text-2xl font-bold">Reports</h1>
+      <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
+        <h1 className="text-2xl font-bold text-[#042f2e]">Reports</h1>
         {/* <p className="mt-1 text-sm text-gray-600">
           Sales analytics (Chart.js). Replace mock data with <span className="font-semibold">/api/reports</span> later.
         </p> */}
