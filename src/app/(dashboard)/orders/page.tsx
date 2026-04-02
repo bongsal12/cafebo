@@ -131,9 +131,9 @@ async function markStatus(orderId: number, status: "completed" | "cancelled") {
       <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <h1 className="text-2xl font-bold text-white">Orders</h1>
+            <h1 className="text-2xl font-bold text-[#042f2e]">Orders</h1>
           </div>
-
+{/* 
           <div className="text-right">
             <div className="text-sm text-gray-200">Realtime</div>
             <div
@@ -143,12 +143,12 @@ async function markStatus(orderId: number, status: "completed" | "cancelled") {
             >
               {connected ? "Connected" : "Disconnected"}
             </div>
-          </div>
+          </div> */}
         </div>
-
+{/* 
         <div className="mt-3 text-xl text-green-300">
           Total orders: <span className="font-semibold">{totalOrders}</span>
-        </div>
+        </div> */}
       </div>
 
       <div className="rounded-2xl bg-[#059669] p-6 shadow-sm">
@@ -161,7 +161,7 @@ async function markStatus(orderId: number, status: "completed" | "cancelled") {
         ) : (
           <div className="space-y-3">
             {orders
-            .filter((o) => o.status === "pending" || leavingIds[o.id])
+            .filter((o) => o.status === "paid" || o.status === "pending" || leavingIds[o.id])
             .map((o) => (
             <div
                key={o.id}
@@ -178,7 +178,7 @@ async function markStatus(orderId: number, status: "completed" | "cancelled") {
                       {o.status}
                     </span>
 
-                 {o.status === "pending" ? (
+                 {o.status === "paid" || o.status === "pending" ? (
                  <div className="flex items-center gap-2">
                  <button
                   onClick={() => markStatus(o.id, "completed")}
